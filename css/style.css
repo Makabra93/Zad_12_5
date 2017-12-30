@@ -1,8 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Lobster');
+
 * {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
-  margin-top: 40vh;
+  margin-top: 5vh;
+  background-color: rgb(48, 48, 94);
+}
+
+main header h1 {
+  color: rgb(150, 150, 91);
+  font-family: Lobster;
+  font-size: 55px;
+}
+main .box {
+  background-color: rgb(34, 34, 70);
+  padding: 40px;
+  margin: 50px 0;
+  -webkit-box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+}
+main .quote {
+  font: 40px "Josefin Slab";
+}
+main .author {
+  margin-top: 40px;
+  font: bold 30px "Josefin Slab";
+}
+button:focus {
+  outline:0;
+}
+main .trigger,
+main .tweet {
+  font-family: Lobster;
+  color: rgb(150, 150, 91);
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid rgb(150, 150, 91);
+  border-radius: 8px;
+  background-color: rgb(48, 48, 94);
+  width: 400px;
+  cursor: default;
+}
+main .trigger {
+  margin: 20px 0;
+}
+main .tweet {
+  display: block;
+  margin: 0 auto;
+}
+main .trigger:hover,
+main .tweet:hover {
+  background-color: rgb(150, 150, 91);
+  color: white; 
+}
+main .trigger:active,
+main .tweet:active {
+  color: white; 
+  box-shadow: inset 0px 0px 9px 2px rgba(0,0,0,0.54);
 }
